@@ -3,6 +3,19 @@ body {
   margin: 0px;
 }
 
+/* Default light mode styles */
+body {
+  background-color: rgb(185, 168, 168);
+  color: black;
+}
+
+.dark-mode {
+  background-color: rgb(72, 69, 157);
+  color: rgb(250, 246, 246);
+}
+/* Additional styles for other elements can be added here */
+
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -31,7 +44,7 @@ body {
 }
 
 .active-nav-link {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .active-nav-link a {

@@ -6,9 +6,54 @@
   <title>Portfolio Homepage</title>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Default light mode styles */
+    body {
+      background-color: rgb(213, 209, 209);
+      color: black;
+    }
+
+    .dark-mode {
+      background-color: rgb(46, 44, 76);
+      color: white;
+    }
+
+    .profile-image-wrapper {
+      width: 70%;
+      margin: 50px; /* Добавляем отступы вокруг контейнера */
+    }
+
+    .profile-image-wrapper img {
+      width: 305px;
+      height: 350px;
+      border: 2px solid black; /* Устанавливаем границу */
+      border-radius: 15px; /* Закругляем углы */
+    }
+
+    .profile-content-wrapper {
+      margin: 100px; /* Добавляем отступы вокруг контейнера */
+    }
+
+   
+  #theme-toggle {
+    background-color: rgb(211, 211, 208);
+    color: rgb(49, 36, 133);
+    font-size: 10px; /* Adjust font size as needed */
+    padding: 8px 16px; /* Adjust padding for button size */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Add pointer cursor on hover */
+    border-radius: 10px; /* Rounded corners */
+  }
+
+  #theme-toggle:hover {
+    opacity: 0.8; /* Reduce opacity on hover for visual feedback */
+  }
+  </style>
 </head>
 
 <body>
+  <button id="theme-toggle">Toggle Dark Mode</button>
+
   <div class="container">
     <div class="nav-wrapper">
       <div class="left-side">
@@ -23,7 +68,7 @@
 
       <div class="right-side">
         <div class="brand">
-          JORDAN HUDGENS
+          <b>SABIR SULEYMAN</b>
         </div>
       </div>
     </div>
@@ -33,24 +78,38 @@
         <div class="profile-image-wrapper">
           <img src="images/profile.jpg" alt="">
         </div>
-
+        
         <div class="profile-content-wrapper">
-          <h1>Hi, thanks for visiting my site.</h1>
-          <p>With over a decade of development experience in a number of industries I realized that the typical product creation
-            process between clients and developers was flawed. All too often developers rarely communicate to clients throughout
-            the development stage, resulting in a final product that fails to reach the goal sought by the customer and end
-            user.
+          <h1>Hi, danke für den Besuch meiner Site.</h1>
+          <p>Nach über einem Jahrzehnt Entwicklungserfahrung in einer Reihe von Branchen wurde mir klar, 
+            dass der typische Produkterstellungsprozess zwischen Kunden und Entwicklern fehlerhaft war. 
+            Allzu oft kommunizieren Entwickler während der gesamten Entwicklungsphase kaum mit Kunden, 
+            was zu einem Endprodukt führt, das das vom Kunden und Endbenutzer angestrebte Ziel nicht erreicht.
           </p>
 
-          <p>For this reason I decided to utilize a completely different development pattern that focuses on highly focused
-            communication and transparent design patterns. When I take on a project not only do I work to craft the application
-            according to the client's specifications, I give daily updates to ensure that the project is aligning properly
-            with the client's goals. The end result is the right product, delivered on time, and on budget.</p>
+          <p>Aus diesem Grund habe ich mich für ein völlig anderes Entwicklungsmuster entschieden, das sich 
+            auf hochgradig fokussierte Kommunikation und transparente Designmuster konzentriert. Wenn ich ein 
+            Projekt übernehme, arbeite ich nicht nur daran, die Anwendung gemäß den Spezifikationen des Kunden 
+            zu erstellen, sondern liefere auch tägliche Updates, um sicherzustellen, dass das Projekt genau mit 
+            den Zielen des Kunden übereinstimmt. Das Endergebnis ist das richtige Produkt, das pünktlich und im 
+            Rahmen des Budgets geliefert wird.</p>
+
+          <p>Von meinen ersten Studientagen an bei Fachinformatiker-SystemIntegration und an den 
+              DCI-Instituten, während meiner langjährigen Studienzeit sowie während meiner Arbeit habe 
+              ich mich genau an diese Grundsätze gehalten. Das ist mein Prinzip!</p>
+          
+          <p>Wenn Du Interesse an mir hast, bin ich 24 Stunden am Tag und 7 Tage die Woche für Dich da.</p>
         </div>
       </div>
     </div>
   </div>
 
+  <script>
+    const toggleButton = document.getElementById('theme-toggle');
+    toggleButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
 </body>
 
 </html>
