@@ -124,10 +124,6 @@ body {
   width: 100%;
 }
 
-.profile-content-wrapper {
-  padding: 30px;
-}
-
-.profile-content-wrapper h1 {
+.profile-content-wrapper h2 {
   color: lightseagreen;
 }

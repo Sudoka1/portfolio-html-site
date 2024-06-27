@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
-  <meta charset='UTF-8'>
+  <meta charset="UTF-8">
   <title>Portfolio Homepage</title>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
   <style>
     /* Default light mode styles */
@@ -20,34 +21,96 @@
 
     .profile-image-wrapper {
       width: 70%;
-      margin: 50px; /* Добавляем отступы вокруг контейнера */
+      margin: 50px;
     }
 
     .profile-image-wrapper img {
       width: 305px;
       height: 350px;
-      border: 2px solid black; /* Устанавливаем границу */
-      border-radius: 15px; /* Закругляем углы */
+      border: 2px solid black;
+      border-radius: 15px;
     }
 
     .profile-content-wrapper {
-      margin: 100px; /* Добавляем отступы вокруг контейнера */
+      margin: 100px;
     }
 
-   
-  #theme-toggle {
-    background-color: rgb(211, 211, 208);
-    color: rgb(49, 36, 133);
-    font-size: 10px; /* Adjust font size as needed */
-    padding: 8px 16px; /* Adjust padding for button size */
-    border: none; /* Remove default button border */
-    cursor: pointer; /* Add pointer cursor on hover */
-    border-radius: 10px; /* Rounded corners */
-  }
+    #theme-toggle {
+      background-color: rgb(211, 211, 208);
+      color: rgb(49, 36, 133);
+      font-size: 10px;
+      padding: 8px 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 10px;
+    }
 
-  #theme-toggle:hover {
-    opacity: 0.8; /* Reduce opacity on hover for visual feedback */
-  }
+    #theme-toggle:hover {
+      opacity: 0.8;
+    }
+
+    .nav-wrapper {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .nav-link-wrapper {
+      margin-right: 20px;
+    }
+
+    .nav-link-wrapper a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .active-nav-link a {
+      font-weight: bold;
+    }
+
+    .brand {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .content-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .footer-center {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .footer-center p {
+      margin: 5px 0;
+    }
+
+    .footer-center a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .footer-name {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .sudochu a {
+      display: block;
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .sudochu img {
+      border-radius: 50%;
+    }
   </style>
 </head>
 
@@ -64,8 +127,12 @@
         <div class="nav-link-wrapper active-nav-link">
           <a href="about.html">About</a>
         </div>
-      </div>
 
+        <div class="nav-link-wrapper">
+          <a href="myskilles.html">Skilles</a>
+        </div>
+
+      </div>
       <div class="right-side">
         <div class="brand">
           <b>SABIR SULEYMAN</b>
@@ -78,31 +145,47 @@
         <div class="profile-image-wrapper">
           <img src="images/profile.jpg" alt="">
         </div>
-        
         <div class="profile-content-wrapper">
-          <h1>Hi, danke für den Besuch meiner Site.</h1>
-          <p>Nach über einem Jahrzehnt Entwicklungserfahrung in einer Reihe von Branchen wurde mir klar, 
-            dass der typische Produkterstellungsprozess zwischen Kunden und Entwicklern fehlerhaft war. 
-            Allzu oft kommunizieren Entwickler während der gesamten Entwicklungsphase kaum mit Kunden, 
+          <h2>Hi, vielen Danke für den Besuch auf meiner Website.</h2>
+          <p>Nach zehn Jahren Entwicklungserfahrung in verschiedenen Branchen wurde mir klar, dass der 
+            typische Produktentstehungsprozess zwischen Kunden und Entwicklern fehlerhaft ist.
+            Allzu oft kommunizieren Entwickler während der gesamten Entwicklungsphase kaum mit Kunden,
             was zu einem Endprodukt führt, das das vom Kunden und Endbenutzer angestrebte Ziel nicht erreicht.
           </p>
 
-          <p>Aus diesem Grund habe ich mich für ein völlig anderes Entwicklungsmuster entschieden, das sich 
-            auf hochgradig fokussierte Kommunikation und transparente Designmuster konzentriert. Wenn ich ein 
-            Projekt übernehme, arbeite ich nicht nur daran, die Anwendung gemäß den Spezifikationen des Kunden 
-            zu erstellen, sondern liefere auch tägliche Updates, um sicherzustellen, dass das Projekt genau mit 
-            den Zielen des Kunden übereinstimmt. Das Endergebnis ist das richtige Produkt, das pünktlich und im 
+          <p>Aus diesem Grund habe ich mich für ein völlig anderes Entwicklungsmuster entschieden, das sich
+            auf hochgradig fokussierte Kommunikation und transparente Designmuster konzentriert. Wenn ich ein
+            Projekt übernehme, arbeite ich nicht nur daran, die Anwendung gemäß den Spezifikationen des Kunden
+            zu erstellen, sondern liefere auch tägliche Updates, um sicherzustellen, dass das Projekt genau mit
+            den Zielen des Kunden übereinstimmt. Das Endergebnis ist das richtige Produkt, das pünktlich und im
             Rahmen des Budgets geliefert wird.</p>
 
-          <p>Von meinen ersten Studientagen an bei Fachinformatiker-SystemIntegration und an den 
-              DCI-Instituten, während meiner langjährigen Studienzeit sowie während meiner Arbeit habe 
-              ich mich genau an diese Grundsätze gehalten. Das ist mein Prinzip!</p>
-          
+          <p>Von meinen ersten Studientagen an bei Fachinformatiker-SystemIntegration und an den
+            DCI-Digital Career Institute-Instituten, während meiner langjährigen Studienzeit sowie während meiner Arbeit habe
+            ich mich genau an diese Grundsätze gehalten. Das ist mein Prinzip!</p>
+
           <p>Wenn Du Interesse an mir hast, bin ich 24 Stunden am Tag und 7 Tage die Woche für Dich da.</p>
         </div>
       </div>
     </div>
   </div>
+</a>
+  <div class="footer-center">
+    <p><i class="fas fa-map-marker-alt"></i> <a href="https://g.co/kgs/tNwK3Md">Detmolder Straße 11 - 33102 - Paderborn - NRW, Deutschland</a></p>
+    <p><i class="fas fa-phone-alt"></i> +49 177 69 26 110</p>
+    <p><i class="far fa-envelope"></i> <a href="mailto:sabir.suleyman.az@gmail.com">sabir.suleyman.az@gmail.com</a></p>
+    <p><i class="fab fa-github"></i> <a href="https://github.com/Sudoka1">GitHub</a></p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signinhttps://www.linkedin.com/feed/?trk=guest_homepage-basic_nav-header-signin">LinkedIn</a></p>
+    <p><i class="fas fa-external-link-alt"></i> <a href="https://vercel.com/sudoka1s-projects">Vercel</a></p>
+  </div>
+
+  <li class="sudochu"><a href="https://www.worldsudo.com/de/ueber-sudo/">
+    <img src="https://www.worldsudo.com/wp-content/uploads/2023/01/81610414_156041652352471_3916256059299201024_n.jpg"
+    alt="Profibild" style="border-radius: 50%;" width="60px" /></a>
+  </li>
+  
+
+  <p class="footer-name">Sabir Suleyman © 2024</p>
 
   <script>
     const toggleButton = document.getElementById('theme-toggle');
