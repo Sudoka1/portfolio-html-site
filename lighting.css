@@ -1,23 +1,115 @@
 #suchfeld {
-    float: right;
-    position: relative;
-   
-  }
-  #suchfeld input {
-    height: 30px;
-    background-image: url(https://www.daserste.de/mediasrc/img/base/icon/lupe_gross.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 20px;
-    /* border: 44px; */
-    border-color:  black;
-    border-radius: 10px;
-  }
-  #suchfeld input:hover{
-    background-color: blue;
-    color: white;
-  }
+  float: right;
+  position: relative;
+}
 
-  @media screen and (max-width: 280px) {
-    /* Ihre spezifischen Stile hier */
+#suchfeld input {
+  height: 30px;
+  background-image: url(https://www.daserste.de/mediasrc/img/base/icon/lupe_gross.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 20px;
+  border-color: black;
+  border-radius: 10px;
+}
+
+#suchfeld input:hover {
+  background-color: blue;
+  color: white;
+}
+
+@media screen and (max-width: 280px) {
+  /* Your specific styles here */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px;
+}
+
+.left-side {
+  display: flex;
+}
+
+.nav-wrapper > .left-side > .nav-link-wrapper:nth-child(1),
+.nav-wrapper > .left-side > .nav-link-wrapper:nth-child(2),
+.nav-wrapper > .left-side > .nav-link-wrapper:nth-child(3) {
+  margin-right: 10px; /* Adjusted to 10px for spacing */
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+
+.active-nav-link {
+  border-bottom: 1px solid black;
+}
+
+.active-nav-link a {
+  color: #8a8a8a !important;
+}
+
+.active-nav-link-wrapper a:hover {
+  border-bottom: 1px solid white;
+}
+
+.active-nav-link-wrapper:hover {
+  border-bottom: 1px solid white;
+}
+
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 1px solid white;
+}
+
+.nav-link-wrapper a:hover {
+  color: white;
+}
+
+.left-side {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: auto;
+  padding: 20px;
+}
+
+.nav-link-wrapper {
+  margin-right: 20px;
+}
+
+.nav-link-wrapper a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-link-wrapper a:hover {
+  color: #ffd700;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+.active-nav-link a {
+  color: #ffd700;
+  border-bottom: 2px solid #ffd700;
 }
