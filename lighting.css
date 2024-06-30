@@ -113,3 +113,7 @@
   color: #ffd700;
   border-bottom: 2px solid #ffd700;
 }
+
+.heart::before {
+  content: '\2764\FE0F';
+}
