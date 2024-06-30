@@ -1,0 +1,23 @@
+#suchfeld {
+    float: right;
+    position: relative;
+   
+  }
+  #suchfeld input {
+    height: 30px;
+    background-image: url(https://www.daserste.de/mediasrc/img/base/icon/lupe_gross.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 20px;
+    /* border: 44px; */
+    border-color:  black;
+    border-radius: 10px;
+  }
+  #suchfeld input:hover{
+    background-color: blue;
+    color: white;
+  }
+
+  @media screen and (max-width: 280px) {
+    /* Ihre spezifischen Stile hier */
+}

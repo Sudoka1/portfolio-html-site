@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lighting.css">
     <title>Countdown Timer</title>
     <style>   
         body {
@@ -128,6 +129,18 @@
                 color: gray;
             }
         }
+        /* Responsive Design for Mobile */
+        @media screen and (max-width: 768px) { /* Adjust breakpoint as needed */
+            h1 {
+                font-size: 300%; /* Reduce font size for smaller screens */
+            }
+            #timer {
+                font-size: 32px; /* Reduce font size for smaller screens */
+            }
+            .element {
+                letter-spacing: 10px; /* Adjust letter spacing for smaller screens */
+            }
+        }
     </style>
     <script>
         function goToIndex() {
@@ -136,6 +149,19 @@
     </script>
 </head>
 <body>
+
+
+
+  <div id="suchfeld">
+    <form action="https://www.google.com/search" method="GET">
+      <input type="text" name="q" placeholder="Suchen...">
+      <input type="submit" value="Suchen   " class="search-button">
+    </form>
+
+  </div> 
+
+
+
     <h1>
         <b>
             <span class="element" onclick="goToIndex()">W</span>
@@ -148,11 +174,11 @@
             <span class="element" onclick="goToIndex()">M</span>
             <span class="element" onclick="goToIndex()">E</span>
             <span class="element" onclick="goToIndex()">N</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+                
             <span class="element" onclick="goToIndex()">A</span>
             <span class="element" onclick="goToIndex()">U</span>
             <span class="element" onclick="goToIndex()">F</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+                
             <span class="element" onclick="goToIndex()">D</span>
             <span class="element" onclick="goToIndex()">E</span>
             <span class="element" onclick="goToIndex()">R</span>
@@ -164,7 +190,7 @@
             <span class="element" onclick="goToIndex()">I</span>
             <span class="element" onclick="goToIndex()">T</span>
             <span class="element" onclick="goToIndex()">E</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+                
             <span class="element" onclick="goToIndex()">V</span>
             <span class="element" onclick="goToIndex()">O</span>
             <span class="element" onclick="goToIndex()">N</span>
@@ -174,7 +200,7 @@
             <span class="element" onclick="goToIndex()">B</span>
             <span class="element" onclick="goToIndex()">I</span>
             <span class="element" onclick="goToIndex()">R</span>
-            &nbsp;&nbsp;&nbsp;&nbsp;
+                
             <span class="element" onclick="goToIndex()">S</span>
             <span class="element" onclick="goToIndex()">U</span>
             <span class="element" onclick="goToIndex()">L</span>
@@ -196,7 +222,7 @@
 
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Jul 1, 2024 15:37:25").getTime();
+        var countDownDate = new Date("Jul 2, 2024 15:37:25").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function() {
