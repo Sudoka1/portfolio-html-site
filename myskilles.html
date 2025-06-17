@@ -9,76 +9,171 @@
 </head>
 <body>
 
-  <div class="nav-wrapper">
-    <div class="left-side">
-      <div class="nav-link-wrapper">
-        <a href="index.html">Home</a>
-      </div>
-      <div class="nav-link-wrapper">
-        <a href="about.html">About</a>
-      </div>
-      <div class="nav-link-wrapper active-nav-link">
-        <a href="myskilles.html">Skilles</a>
-      </div>
-    </div>
-    <div class="right-side">
-      <div class="brand"><b>SABIR SULEYMAN</b></div>
-    </div>
+ <style>
+  .skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin: 40px auto;
+    max-width: 1200px;
+    font-family: Arial, sans-serif;
+  }
+
+  .skill-card {
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    padding: 16px;
+    background: white;
+    width: 230px;
+    text-align: center;
+  }
+
+  .skill-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .skill-name {
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+
+  .skill-bar {
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 14px;
+    margin-top: 5px;
+  }
+
+  .skill-bar-fill {
+    height: 100%;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    text-align: right;
+    color: white;
+    padding-right: 5px;
+    font-size: 10px;
+  }
+</style>
+
+<div class="skills-grid">
+  <div class="skill-card">
+    <div class="skill-icon">🔤</div>
+    <div class="skill-name">HTML5</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 100%;">100%</div></div>
   </div>
-
-  <div class="skills-container">
-    <h1>🧠 Meine Fähigkeiten & Kenntnisse</h1>
-
-    <div class="skill">
-      <span>HTML</span>
-      <div class="progress-bar"><div class="progress" style="width: 100%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>CSS</span>
-      <div class="progress-bar"><div class="progress" style="width: 100%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>SASS</span>
-      <div class="progress-bar"><div class="progress" style="width: 100%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>JavaScript (JS)</span>
-      <div class="progress-bar"><div class="progress" style="width: 100%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>React / JSX</span>
-      <div class="progress-bar"><div class="progress" style="width: 100%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>API</span>
-      <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>Backend</span>
-      <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>Systemintegration</span>
-      <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>Linux</span>
-      <div class="progress-bar"><div class="progress" style="width: 70%"></div></div>
-    </div>
-
-    <div class="skill">
-      <span>Windows</span>
-      <div class="progress-bar"><div class="progress" style="width: 50%"></div></div>
-    </div>
+  <div class="skill-card">
+    <div class="skill-icon">🎨</div>
+    <div class="skill-name">CSS3</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 100%;">100%</div></div>
   </div>
+  <div class="skill-card">
+    <div class="skill-icon">🎨⚙️</div>
+    <div class="skill-name">SASS</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 100%;">100%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">⚙️</div>
+    <div class="skill-name">JavaScript</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 100%;">100%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">⚛️</div>
+    <div class="skill-name">React.js / JSX</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 100%;">100%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">🔗</div>
+    <div class="skill-name">API (RESTful)</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%;">90%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">🌿</div>
+    <div class="skill-name">Node.js</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%;">90%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">🛠️</div>
+    <div class="skill-name">Express.js</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%;">90%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">🍃</div>
+    <div class="skill-name">MongoDB</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%;">90%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">🗄️</div>
+    <div class="skill-name">MySQL</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%;">80%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">🔧</div>
+    <div class="skill-name">Git</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%;">90%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">📅⚡</div>
+    <div class="skill-name">Agile Development</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%;">80%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">🖥️</div>
+    <div class="skill-name">Systemintegration</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%;">90%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">🧰</div>
+    <div class="skill-name">Systemadministration</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%;">85%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">🐧</div>
+    <div class="skill-name">Linux (Ubuntu/Debian)</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;">70%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">🪟</div>
+    <div class="skill-name">Windows Server</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 50%;">50%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">🅰️</div>
+    <div class="skill-name">Angular</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 60%;">60%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">🟩</div>
+    <div class="skill-name">Vue.js</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 50%;">50%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">💻</div>
+    <div class="skill-name">VMware / Hyper-V</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%;">80%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">🧑‍💻</div>
+    <div class="skill-name">IT-Support</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%;">85%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">🔐</div>
+    <div class="skill-name">Cybersecurity</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;">70%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">🖼️</div>
+    <div class="skill-name">Photoshop</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 60%;">60%</div></div>
+  </div>
+  <div class="skill-card">
+    <div class="skill-icon">🌐</div>
+    <div class="skill-name">FTP / Webhosting</div>
+    <div class="skill-bar"><div class="skill-bar-fill" style="width: 75%;">75%</div></div>
+  </div>
+</div>
 
 </body>
 </html>
